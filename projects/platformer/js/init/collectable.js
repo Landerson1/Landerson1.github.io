@@ -7,9 +7,9 @@
     let type = {
         db: {assetKey: 'db', points: 10},
         max: {assetKey: 'max', points: 20},
-        steve: {assetKey: 'steve', points: 30},
-        grace: {assetKey: 'grace', points: 40},
-        kennedi: {assetKey: 'kennedi', points: 50}
+        steve: {assetKey: 'steve', points: 140},
+        grace: {assetKey: 'grace', points: 140},
+        kennedi: {assetKey: 'kennedi', points: 140}
     };
     
     /**
@@ -36,6 +36,8 @@
         
         // example: 
         collectable.create(type.steve, 200, 170, 6, 0.7);
+        collectable.create(type.kennedi, 600, 200, 10, 1.1);
+        collectable.create(type.grace, 780, 500, -7, 0);
         
         
         
