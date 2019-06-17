@@ -49,11 +49,14 @@
 			speed = 10;
 			direction = 1;
 			
+		box.css('left', position);      // moves the box to the x-coordinate of <position> 
+    	box.text(points);               // changes the text of the box to display the value of <points>
+			
 			function update() {
 				// TODO 3 / 6 / 7 / 8
 				position += speed * direction;    // increment position by speed on every update
 				console.log("new position: " + position);
-				if (position === 0) {
+				if (position <= 0) {
 				console.log("Left Wall Hit");
 				direction = 1;
 				}
